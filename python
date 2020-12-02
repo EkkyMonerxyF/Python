@@ -1,0 +1,24 @@
+def main():
+
+    print("PROGRAM MENGHITUNG TAGIHAN TELEPON")
+    print("-"*22)
+    print("DATA PELANGGAN")
+
+    nama = input("Nama Pelanggan : ")
+    cakap = int(input("Percakapan (menit): "))
+    sms = int(input("SMS (kali): "))
+
+    print("TAGIHAN")
+    abn = 20000
+    print("Abonemen : Rp.", abn)
+    rp_cakap = cakap*1000
+    print("Biaya Percakapan : Rp.", rp_cakap)
+    rp_sms = sms*300
+    print("Biaya SMS : Rp.", rp_sms)
+    tagih = abn+rp_cakap+rp_sms
+    print("-"*22)
+    print("Total Tagihan : Rp.", tagih)
+
+
+if __name__ == "__main__":
+    main()
