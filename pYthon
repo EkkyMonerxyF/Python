@@ -1,0 +1,31 @@
+def main():
+
+    # fungsi input
+    print("Program Gaji Pegawai")
+    nama = str(input("Nama Karyawan : "))
+    anak = int(input("Jumlah Anak : "))
+    print()
+    print("-"*50)
+
+    # fungsi input
+    gp = int(input("Gaji Pokok : ",))
+    print()
+    print("T. Kesejahteraan", "\t", "T. Keluarga", "\t", "Pajak", "\t")
+
+    # menghitung jumlah masing - masing tunjangan dan pajak
+    tks = int(0.20*gp)
+    tkl = int(0.10*gp)
+    pjk = int(0.10*gp)
+    print(tks, "\t", "\t", "\t", tkl*anak, "\t", "\t", pjk, "\t")
+    print("-"*50)
+    print()
+
+    # menghitung gaji kotor dan bersih
+    gkt = gp+tks+tkl+pjk
+    print("Gaji Kotor :", gkt)
+    gbr = gkt - pjk
+    print("Gaji Bersih :", gbr)
+
+
+if __name__ == "__main__":
+    main()
