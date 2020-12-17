@@ -1,38 +1,40 @@
 def main():
 
-    print("Perbandingan Bilangan")
-    print("-"*25)
+    print("DATA PEGAWAI")
+    print("-"*22, "\n")
 
-    a = int(input("Masukkan Bilangan : "))
-    b = int(input("Masukkan Bilangan : "))
-    c = int(input("Masukkan Bilangan : "))
+    nama = input("Nama : ")
+    golongan = input("Golongan : ")
+    ttj = int(input("Total Jam Kerja : "))
+    print("\n")
+    print("PERHITUNGAN GAJI")
+    print("-"*22, "\n")
 
-    if a == b:
-        if a == b and a < c:
-            print("Bilangan", a, "dan", b, "Lebih Kecil dari", c)
-        elif a == b and a > c:
-            print("Bilangan", a, "dan", b, "Lebih Besar dari", c)
+    gapok = int(input("Gaji Pokok : "))
 
-    elif a == c:
-        if a == c and a < b:
-            print("Bilangan", a, "dan", c, "Lebih Kecil dari", b)
-        elif a == c and a > b:
-            print("Bilangan", a, "dan", c, "Lebih Besar dari", b)
+    if gapok == 500000:
+        tj = int(0.10*gapok)
+        print("Tunjangan : ", tj)
+        lbr = (ttj - 200) * 5000
+        print("Lembur : ", lbr)
+        print("-"*22, "\n")
+        print("Total : ", gapok+tj+lbr)
 
-    elif b == c:
-        if b == c and b < a:
-            print("Bilangan", b, "dan", c, "Lebih Kecil dari", a)
-        elif b == c and b > a:
-            print("Bilangan", b, "dan", c, "Lebih Besar dari", a)
+    if gapok == 700000:
+        tj = int(0.15*gapok)
+        print("Tunjangan : ", tj)
+        lbr = (ttj - 200) * 7500
+        print("Lembur : ", lbr)
+        print("-"*22, "\n")
+        print("Total : ", gapok+tj+lbr)
 
-    elif a > b and a > c:
-        print("Bilangan Terbesar", a)
-
-    elif b > a and b > c:
-        print("Bilangan Terbesar", b)
-
-    else:
-        print("Bilangan Terbesar", c)
+    if gapok == 900000:
+        tj = int(0.20*gapok)
+        print("Tunjangan : ", tj)
+        lbr = (ttj - 200) * 10000
+        print("Lembur : ", lbr)
+        print("-"*22, "\n")
+        print("Total : ", gapok+tj+lbr)
 
 
 if __name__ == "__main__":
