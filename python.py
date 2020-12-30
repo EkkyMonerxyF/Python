@@ -1,13 +1,15 @@
-a = int(input("\nBanyaknya data : "))
+print("PROGRAM MENGHITUNG X^y")
+print("=======================")
 
-b = []
-d = 0
+a = 0
 
-for x in range(1, a+1):
-    c = int(input("Masukkan Data ke - %d: " % (x)))
-    b.append(c)
-    d = sum(b)
-    e = d / a
+while a == 0:
+    a = float(input("Masukkan Bilangan Real (X) : "))
+    if a == 0:
+        print("Ini Bukan Bilangan Real")
+    elif a > 0 and a < 0:
+        break
 
-print("Total : ", d)
-print("Rata - rata : ", e)
+    b = int(input("Masukkan Bilangan Bulat Positif : "))
+    c = a**b
+    print("X pangkat Y adalah = ", c)
