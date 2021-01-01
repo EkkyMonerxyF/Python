@@ -1,0 +1,18 @@
+from random import choice
+
+# list of numbers
+numList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+c = 0
+# memilih bil dari list scr acak
+while c == 0:
+    a = int(input("Masukkan Angka 1 - 10 : "))
+    bil = choice(numList)
+    if a > bil:
+        print(a, "Lebih besar dari", bil)
+    elif a < bil:
+        print(a, "Lebih kecil dari", bil)
+    else:
+        print("Angka Sama")
+        break
