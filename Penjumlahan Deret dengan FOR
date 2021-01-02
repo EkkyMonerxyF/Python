@@ -1,0 +1,13 @@
+a = int(input("X : "))
+b = int(input("Y : "))
+
+c = 0
+
+for x in range(a+1, b):
+    if x == a+1:
+        print("Deret = ", x, end=" ")
+    else:
+        print(x, end=" ")
+    c = c + x
+print()
+print("Jumlah = ", c)
