@@ -1,0 +1,60 @@
+print("PROGRAM DERET ANGKA")
+
+while True:
+    print("1. 5 KOLOM")
+    print("2. 5 BARIS")
+    print("3. Pola Segitiga Terbalik")
+    print("4. 4 KOLOM")
+    print("5. Perkalian Bilangan\n")
+
+    a = int(input("Pilihan : "))
+
+    if a == 1:
+        c = int(input("Masukkan Angka : "))
+        print("\n")
+        c = c + 1
+        for d in range(1, c):
+            print(d, end=" ")
+            if d % 5 == 0:
+                print()
+    print("\n")
+
+    if a == 2:
+        g = int(input("Masukkan Angka : "))
+
+        for h in range(g):
+            for j in range(h+1):
+                print(g-j, end=" ")
+            print()
+            if h == 3 or h == 5:
+                print()
+
+    if a == 3:
+        i = int(input("Masukkan Angka : "))
+
+        for j in range(i, 0, -1):
+            for k in range(j):
+                print(k + 1, end=" ")
+            print()
+
+    if a == 4:
+        l = int(input("Masukkan Angka : "))
+
+        o = 0
+
+        for m in range(l - 1):
+            for n in range(l):
+                o = o + 1
+                print(o, end=" ")
+            print()
+
+    if a == 5:
+        n = int(input("Masukkan Angka : "))
+
+        for x in range(1, n+1):
+            print(x, x**2, x**3)
+
+    f = input("Lanjut Y / T : ")
+    if f == "T":
+        print("\n")
+        break
